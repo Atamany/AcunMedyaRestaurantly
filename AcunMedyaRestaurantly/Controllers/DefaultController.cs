@@ -1,4 +1,5 @@
 ﻿using AcunMedyaRestaurantly.Context;
+using AcunMedyaRestaurantly.Entities;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -53,6 +54,17 @@ namespace AcunMedyaRestaurantly.Controllers
         public PartialViewResult PartialContact()
         {
             return PartialView();
+        }
+        [HttpPost]
+        public ActionResult ContactAdd(Contact model)
+        {
+            model.SendDate = DateTime.Now;
+            model.isRead = false;
+            db.Contacts.Add(model);
+            db.SaveChanges();
+            ViewBag.Message = "Mesaj Başarılı";
+            return View("Index");
+
         }
     }
 }
