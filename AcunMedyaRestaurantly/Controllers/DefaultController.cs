@@ -35,5 +35,14 @@ namespace AcunMedyaRestaurantly.Controllers
             ViewBag.ImageUrl = db.Features.Select(x => x.ImageUrl).FirstOrDefault();
             return PartialView();
         }
+        public PartialViewResult PartialAbout()
+        {
+            return PartialView();
+        }
+        public PartialViewResult PartialService()
+        {
+            var value = db.Services.ToList();
+            return PartialView(value);
+        }
     }
 }

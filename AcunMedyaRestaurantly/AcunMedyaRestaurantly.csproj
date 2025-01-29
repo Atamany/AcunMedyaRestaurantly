@@ -329,6 +329,8 @@
     <Content Include="Views\Default\PartialTop.cshtml" />
     <Content Include="Views\Default\PartialNavbar.cshtml" />
     <Content Include="Views\Default\PartialFeature.cshtml" />
+    <Content Include="Views\Default\PartialAbout.cshtml" />
+    <Content Include="Views\Default\PartialService.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
