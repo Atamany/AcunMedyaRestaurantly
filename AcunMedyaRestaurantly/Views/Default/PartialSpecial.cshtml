@@ -12,7 +12,7 @@
                     @foreach (var item in Model)
                     {
                         <li class="nav-item">
-                            <a class="nav-link active show" data-bs-toggle="tab" href="#tab-@item.SpecialId">@item.Title</a>
+                            <a class="nav-link @(Model.IndexOf(item) == 0 ? "active show" : "")" data-bs-toggle="tab" href="#tab-@item.SpecialId">@item.Title</a>
                         </li>
                     }
                 </ul>
@@ -22,7 +22,7 @@
                     <div class="tab-content">
                         @foreach (var item in Model)
                         {
-                            <div class="tab-pane active show" id="tab-@item.SpecialId">
+                            <div class="tab-pane @(Model.IndexOf(item) == 0 ? "active show" : "")" id="tab-@item.SpecialId">
                                 <div class="row">
                                     <div class="col-lg-8 details order-2 order-lg-1">
                                         <h3>@item.Title</h3>
