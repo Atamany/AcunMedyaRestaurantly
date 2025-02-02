@@ -38,6 +38,9 @@ namespace AcunMedyaRestaurantly.Controllers
         }
         public PartialViewResult PartialAbout()
         {
+            ViewBag.Title = db.Abouts.Select(x => x.Title).FirstOrDefault();
+            ViewBag.Description = db.Abouts.Select(x => x.Description).FirstOrDefault();
+            ViewBag.ImageUrl = db.Abouts.Select(x => x.ImageUrl).FirstOrDefault();
             return PartialView();
         }
         public PartialViewResult PartialService()
@@ -66,5 +69,43 @@ namespace AcunMedyaRestaurantly.Controllers
             return View("Index");
 
         }
+        public PartialViewResult PartialSpecial()
+        {
+            var value = db.Specials.ToList();
+            return PartialView(value);
+        }
+        public PartialViewResult PartialBookaTable()
+        {
+            return PartialView();
+        }
+        [HttpPost]
+        public ActionResult BookTableAdd(Reservation model)
+        {
+            model.ReservationStatus = "Onay Bekliyor";
+            db.Reservations.Add(model);
+            db.SaveChanges();
+            ViewBag.Message = "Rezervasyon Başvurusu Başarılı";
+            return View("Index");
+
+        }
+        public PartialViewResult PartialTestimonial()
+        {
+            var value = db.Testimonials.ToList();
+            return PartialView(value);
+        }
+        public PartialViewResult PartialChef()
+        {
+            var value = db.Chefs.ToList();
+            return PartialView(value);
+        }
+        public PartialViewResult PartialAdress()
+        {
+            ViewBag.Location = db.Adresses.Select(x => x.Location).FirstOrDefault();
+            ViewBag.OpenHours = db.Adresses.Select(x => x.OpenHours).FirstOrDefault();
+            ViewBag.Email = db.Adresses.Select(x => x.Email).FirstOrDefault();
+            ViewBag.Call = db.Adresses.Select(x => x.Call).FirstOrDefault();
+            return PartialView();
+        }
+
     }
 }

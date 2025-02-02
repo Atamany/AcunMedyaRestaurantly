@@ -149,6 +149,10 @@
     <Compile Include="Migrations\202501291809511_mig1productcategoryrelationship.Designer.cs">
       <DependentUpon>202501291809511_mig1productcategoryrelationship.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202502021256510_Guncelleme.cs" />
+    <Compile Include="Migrations\202502021256510_Guncelleme.Designer.cs">
+      <DependentUpon>202502021256510_Guncelleme.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -333,6 +337,11 @@
     <Content Include="Views\Default\PartialService.cshtml" />
     <Content Include="Views\Default\PartialMenu.cshtml" />
     <Content Include="Views\Default\PartialContact.cshtml" />
+    <Content Include="Views\Default\PartialSpecial.cshtml" />
+    <Content Include="Views\Default\PartialBookaTable.cshtml" />
+    <Content Include="Views\Default\PartialTestimonial.cshtml" />
+    <Content Include="Views\Default\PartialChef.cshtml" />
+    <Content Include="Views\Default\PartialAdress.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -368,6 +377,9 @@
   <ItemGroup>
     <EmbeddedResource Include="Migrations\202501291809511_mig1productcategoryrelationship.resx">
       <DependentUpon>202501291809511_mig1productcategoryrelationship.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202502021256510_Guncelleme.resx">
+      <DependentUpon>202502021256510_Guncelleme.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
