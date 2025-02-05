@@ -40,13 +40,13 @@
                                 <tr>
                                     <th>@item.CategoryId</th>
                                     <td>@item.CategoryName</td>
-                                    <td><a href="#" class="btn btn-danger gradient-2">Sil</a></td>
+                                    <td><a href="/Category/CategoryDelete/@item.CategoryId" class="btn btn-danger gradient-2">Sil</a></td>
                                     <td><a href="/Category/CategoryEdit/@item.CategoryId" class="btn btn-info gradient-1">Güncelle</a></td>
                                 </tr>
                                 }
                             </tbody>
                         </table>
-                        <a href="#" class="btn btn-success">Kategori Ekle</a>
+                        <a href="/Category/CategoryCreate/" class="btn btn-success">Kategori Ekle</a>
                     </div>
                 </div>
             </div>
