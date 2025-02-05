@@ -1,4 +1,4 @@
-﻿
+﻿@model List<AcunMedyaRestaurantly.Entities.Category>
 @{
     ViewBag.Title = "CategoryList";
     Layout = "~/Views/AdminLayout/Index.cshtml";
@@ -29,42 +29,24 @@
                             <thead>
                                 <tr>
                                     <th>#</th>
-                                    <th>Name</th>
-                                    <th>Status</th>
-                                    <th>Date</th>
-                                    <th>Price</th>
+                                    <th>Kategori</th>
+                                    <th>Sil</th>
+                                    <th>Güncelle</th>
                                 </tr>
                             </thead>
                             <tbody>
+                                @foreach (var item in Model)
+                                {
                                 <tr>
-                                    <th>1</th>
-                                    <td>Kolor Tea Shirt For Man</td>
-                                    <td>
-                                        <span class="badge badge-primary px-2">Sale</span>
-                                    </td>
-                                    <td>January 22</td>
-                                    <td class="color-primary">$21.56</td>
+                                    <th>@item.CategoryId</th>
+                                    <td>@item.CategoryName</td>
+                                    <td><a href="#" class="btn btn-danger">Sil</a></td>
+                                    <td><a href="#" class="btn btn-info">Güncelle</a></td>
                                 </tr>
-                                <tr>
-                                    <th>2</th>
-                                    <td>Kolor Tea Shirt For Women</td>
-                                    <td>
-                                        <span class="badge badge-danger px-2">Tax</span>
-                                    </td>
-                                    <td>January 30</td>
-                                    <td class="color-success">$55.32</td>
-                                </tr>
-                                <tr>
-                                    <th>3</th>
-                                    <td>Blue Backpack For Baby</td>
-                                    <td>
-                                        <span class="badge badge-success px-2">Extended</span>
-                                    </td>
-                                    <td>January 25</td>
-                                    <td class="color-danger">$14.85</td>
-                                </tr>
+                                }
                             </tbody>
                         </table>
+                        <a href="#" class="btn btn-success">Kategori Ekle</a>
                     </div>
                 </div>
             </div>
