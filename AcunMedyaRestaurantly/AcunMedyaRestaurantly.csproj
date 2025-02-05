@@ -134,6 +134,7 @@
     <Compile Include="Controllers\ErrorPageController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Entities\About.cs" />
+    <Compile Include="Entities\Admin.cs" />
     <Compile Include="Entities\Adress.cs" />
     <Compile Include="Entities\Category.cs" />
     <Compile Include="Entities\Chef.cs" />
@@ -154,6 +155,10 @@
     <Compile Include="Migrations\202502021256510_Guncelleme.cs" />
     <Compile Include="Migrations\202502021256510_Guncelleme.Designer.cs">
       <DependentUpon>202502021256510_Guncelleme.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202502051911305_mig2createadmin.cs" />
+    <Compile Include="Migrations\202502051911305_mig2createadmin.Designer.cs">
+      <DependentUpon>202502051911305_mig2createadmin.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -5616,6 +5621,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202502021256510_Guncelleme.resx">
       <DependentUpon>202502021256510_Guncelleme.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202502051911305_mig2createadmin.resx">
+      <DependentUpon>202502051911305_mig2createadmin.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

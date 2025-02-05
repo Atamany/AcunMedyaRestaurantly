@@ -20,5 +20,6 @@ namespace AcunMedyaRestaurantly.Context
         public DbSet<Service> Services { get; set; }
         public DbSet<Special> Specials { get; set; }
         public DbSet<Testimonial> Testimonials { get; set; }
+        public DbSet<Admin> Admins { get; set; }
     }
 }
