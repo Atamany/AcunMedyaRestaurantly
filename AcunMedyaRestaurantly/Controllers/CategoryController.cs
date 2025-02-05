@@ -15,5 +15,10 @@ namespace AcunMedyaRestaurantly.Controllers
             var value = db.Categories.ToList();
             return View(value);
         }
+        public ActionResult CategoryList()
+        {
+            var value = db.Categories.ToList();
+            return View(value);
+        }
     }
 }
