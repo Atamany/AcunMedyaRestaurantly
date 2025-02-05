@@ -131,6 +131,7 @@
     <Compile Include="Controllers\AdminLayoutController.cs" />
     <Compile Include="Controllers\CategoryController.cs" />
     <Compile Include="Controllers\DefaultController.cs" />
+    <Compile Include="Controllers\ErrorPageController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Entities\About.cs" />
     <Compile Include="Entities\Adress.cs" />
@@ -177,6 +178,14 @@
     <Content Include="favicon.ico" />
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
+    <Content Include="Restaurantly\colorlib-error-404-12\colorlib-error-404-12\css\style.css" />
+    <Content Include="Restaurantly\colorlib-error-404-12\colorlib-error-404-12\img\emoji.png" />
+    <Content Include="Restaurantly\colorlib-error-404-12\colorlib-error-404-12\index.html" />
+    <Content Include="Restaurantly\colorlib-error-404-12\colorlib-error-404-12\readme.txt" />
+    <Content Include="Restaurantly\colorlib-error-404-12\__MACOSX\colorlib-error-404-12\._index.html" />
+    <Content Include="Restaurantly\colorlib-error-404-12\__MACOSX\colorlib-error-404-12\._readme.txt" />
+    <Content Include="Restaurantly\colorlib-error-404-12\__MACOSX\colorlib-error-404-12\css\._style.css" />
+    <Content Include="Restaurantly\colorlib-error-404-12\__MACOSX\colorlib-error-404-12\img\._emoji.png" />
     <Content Include="Restaurantly\quixlab-master\quixlab-master\app-calender.html" />
     <Content Include="Restaurantly\quixlab-master\quixlab-master\app-profile.html" />
     <Content Include="Restaurantly\quixlab-master\quixlab-master\blank.html" />
@@ -5516,6 +5525,9 @@
     <Content Include="Restaurantly\quixlab-master\quixlab-master\plugins\typeahedjs\dist\nba.json" />
     <Content Include="Restaurantly\quixlab-master\quixlab-master\plugins\typeahedjs\dist\nfl.json" />
     <Content Include="Restaurantly\quixlab-master\quixlab-master\plugins\typeahedjs\dist\nhl.json" />
+    <Content Include="Restaurantly\colorlib-error-404-12\__MACOSX\._colorlib-error-404-12" />
+    <Content Include="Restaurantly\colorlib-error-404-12\__MACOSX\colorlib-error-404-12\._css" />
+    <Content Include="Restaurantly\colorlib-error-404-12\__MACOSX\colorlib-error-404-12\._img" />
     <None Include="Scripts\jquery-3.7.0.intellisense.js" />
     <Content Include="Scripts\jquery-3.7.0.js" />
     <Content Include="Scripts\jquery-3.7.0.min.js" />
@@ -5565,6 +5577,7 @@
     <Content Include="Views\AdminLayout\PartialScript.cshtml" />
     <Content Include="Views\Category\CategoryCreate.cshtml" />
     <Content Include="Views\Category\CategoryEdit.cshtml" />
+    <Content Include="Views\ErrorPage\Page404.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
