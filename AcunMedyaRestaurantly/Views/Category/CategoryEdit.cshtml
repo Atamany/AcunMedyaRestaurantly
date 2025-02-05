@@ -1,6 +1,6 @@
-﻿
+﻿@model AcunMedyaRestaurantly.Entities.Category
 @{
-    ViewBag.Title = "CategoryCreate";
+    ViewBag.Title = "CategoryEdit";
     Layout = "~/Views/AdminLayout/Index.cshtml";
 }
 
@@ -8,7 +8,7 @@
     <div class="col p-md-0">
         <ol class="breadcrumb">
             <li class="breadcrumb-item"><a href="javascript:void(0)">Anasayfa</a></li>
-            <li class="breadcrumb-item active"><a href="javascript:void(0)">Kategori Ekleme</a></li>
+            <li class="breadcrumb-item active"><a href="javascript:void(0)">Kategori Güncelleme</a></li>
         </ol>
     </div>
 </div>
@@ -16,19 +16,21 @@
     <div class="col-lg-12">
         <div class="card">
             <div class="card-body">
-                <h4 class="card-title">Kategori Ekleme Formu</h4>
+                <h4 class="card-title">Kategori Güncelleme Formu</h4>
                 <div class="basic-form">
                     <form method="post">
 
                         <div class="form-group">
+                            <input type="hidden" name="CategoryId" value="@Model.CategoryId" />
                             <label>Kategori İsmi</label>
                             <input type="text" class="form-control" name="CategoryName" placeholder="Kategori İsmi Giriniz">
                         </div>
 
-                        <button type="submit" class="btn btn-dark gradient-2">Ekle</button>
+                        <button type="submit" class="btn btn-dark gradient-2">Güncelle</button>
                     </form>
                 </div>
             </div>
         </div>
     </div>
 </div>
+
