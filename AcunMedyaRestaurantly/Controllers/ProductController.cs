@@ -16,6 +16,7 @@ namespace AcunMedyaRestaurantly.Controllers
             var value = db.Products.ToList();
             return View(value);
         }
+        [Authorize]
         public ActionResult ProductList()
         {
             var value = db.Products.ToList();
