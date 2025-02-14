@@ -24,6 +24,13 @@ namespace AcunMedyaRestaurantly.Controllers
         [HttpGet]
         public ActionResult ProductCreate()
         {
+            List<SelectListItem> values = (from x in db.Categories.ToList()
+                                           select new SelectListItem
+                                           {
+                                               Text = x.CategoryName,
+                                               Value = x.CategoryId.ToString()
+                                           }).ToList();
+            ViewBag.v = values;
             return View();
         }
         [HttpPost]
