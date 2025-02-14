@@ -44,6 +44,14 @@ namespace AcunMedyaRestaurantly.Controllers
         public ActionResult ProductEdit(int id)
         {
             var value = db.Products.Find(id);
+
+            List<SelectListItem> values = (from x in db.Categories.ToList()
+                                           select new SelectListItem
+                                           {
+                                               Text = x.CategoryName,
+                                               Value = x.CategoryId.ToString()
+                                           }).ToList();
+            ViewBag.v = values;
             return View(value);
         }
         [HttpPost]
@@ -51,6 +59,10 @@ namespace AcunMedyaRestaurantly.Controllers
         {
             var value = db.Products.Find(model.ProductId);
             value.Name = model.Name;
+            value.Description = model.Description;
+            value.Price = model.Price;
+            value.ImageUrl = model.ImageUrl;
+            value.CategoryId = model.CategoryId;
             db.SaveChanges();
             return RedirectToAction("ProductList");
         }
