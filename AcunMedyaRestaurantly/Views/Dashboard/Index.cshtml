@@ -1,0 +1,113 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/AdminLayout/Index.cshtml";
+}
+
+<div class="container-fluid mt-3">
+    <div class="row">
+        <div class="col-lg-3 col-sm-6">
+            <div class="card gradient-1">
+                <div class="card-body">
+                    <h3 class="card-title text-white">Yemek Sayısı</h3>
+                    <div class="d-inline-block">
+                        <h2 class="text-white">@ViewBag.ProductCount</h2>
+                        <p class="text-white mb-0">Ürünler</p>
+                    </div>
+                    <span class="float-right display-5 opacity-5"><i class="fa fa-shopping-cart"></i></span>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-3 col-sm-6">
+            <div class="card gradient-2">
+                <div class="card-body">
+                    <h3 class="card-title text-white">Kategori Sayısı</h3>
+                    <div class="d-inline-block">
+                        <h2 class="text-white">@ViewBag.CategoryCount</h2>
+                        <p class="text-white mb-0">Kategoriler</p>
+                    </div>
+                    <span class="float-right display-5 opacity-5"><i class="fa fa-money"></i></span>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-3 col-sm-6">
+            <div class="card gradient-3">
+                <div class="card-body">
+                    <h3 class="card-title text-white">Şef Sayısı</h3>
+                    <div class="d-inline-block">
+                        <h2 class="text-white">@ViewBag.ChefCount</h2>
+                        <p class="text-white mb-0">Şefler</p>
+                    </div>
+                    <span class="float-right display-5 opacity-5"><i class="fa fa-users"></i></span>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-3 col-sm-6">
+            <div class="card gradient-4">
+                <div class="card-body">
+                    <h3 class="card-title text-white">Spesiyal Sayısı</h3>
+                    <div class="d-inline-block">
+                        <h2 class="text-white">@ViewBag.SpecialCount</h2>
+                        <p class="text-white mb-0">Spesiyaller</p>
+                    </div>
+                    <span class="float-right display-5 opacity-5"><i class="fa fa-heart"></i></span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--<div class="row">
+        <div class="col-lg-3 col-sm-6">
+            <div class="card">
+                <div class="card-body">
+                    <div class="text-center">
+                        <img src="./images/users/8.jpg" class="rounded-circle" alt="">
+                        <h5 class="mt-3 mb-1">Ana Liem</h5>
+                        <p class="m-0">Senior Manager</p>-->
+    <!-- <a href="javascript:void()" class="btn btn-sm btn-warning">Send Message</a> -->
+    <!--</div>
+            </div>
+        </div>
+    </div>
+    <div class="col-lg-3 col-sm-6">
+        <div class="card">
+            <div class="card-body">
+                <div class="text-center">
+                    <img src="./images/users/5.jpg" class="rounded-circle" alt="">
+                    <h5 class="mt-3 mb-1">John Abraham</h5>
+                    <p class="m-0">Store Manager</p>-->
+    <!-- <a href="javascript:void()" class="btn btn-sm btn-warning">Send Message</a> -->
+    <!--</div>
+            </div>
+        </div>
+    </div>
+    <div class="col-lg-3 col-sm-6">
+        <div class="card">
+            <div class="card-body">
+                <div class="text-center">
+                    <img src="./images/users/7.jpg" class="rounded-circle" alt="">
+                    <h5 class="mt-3 mb-1">John Doe</h5>
+                    <p class="m-0">Sales Man</p>-->
+    <!-- <a href="javascript:void()" class="btn btn-sm btn-warning">Send Message</a> -->
+    <!--</div>
+            </div>
+        </div>
+    </div>
+    <div class="col-lg-3 col-sm-6">
+        <div class="card">
+            <div class="card-body">
+                <div class="text-center">
+                    <img src="./images/users/1.jpg" class="rounded-circle" alt="">
+                    <h5 class="mt-3 mb-1">Mehedi Titas</h5>
+                    <p class="m-0">Online Marketer</p>-->
+    <!-- <a href="javascript:void()" class="btn btn-sm btn-warning">Send Message</a> -->
+    <!--</div>
+                </div>
+            </div>
+        </div>
+
+    </div>-->
+
+    @Html.Action("ReservationPartial", "Dashboard")
+</div>
+

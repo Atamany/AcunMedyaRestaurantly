@@ -130,6 +130,7 @@
     <Compile Include="Context\RestaurantlyContext.cs" />
     <Compile Include="Controllers\AdminLayoutController.cs" />
     <Compile Include="Controllers\CategoryController.cs" />
+    <Compile Include="Controllers\DashboardController.cs" />
     <Compile Include="Controllers\DefaultController.cs" />
     <Compile Include="Controllers\ErrorPageController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
@@ -5835,6 +5836,8 @@
     <Content Include="Views\Product\ProductCreate.cshtml" />
     <Content Include="Views\Product\ProductEdit.cshtml" />
     <Content Include="Views\Login\Index.cshtml" />
+    <Content Include="Views\Dashboard\Index.cshtml" />
+    <Content Include="Views\Dashboard\ReservationPartial.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

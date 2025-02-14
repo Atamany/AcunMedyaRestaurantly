@@ -8,6 +8,7 @@ using System.Web.Mvc;
 
 namespace AcunMedyaRestaurantly.Controllers
 {
+    [Authorize]
     public class ProductController : Controller
     {
         RestaurantlyContext db = new RestaurantlyContext();
@@ -16,7 +17,6 @@ namespace AcunMedyaRestaurantly.Controllers
             var value = db.Products.ToList();
             return View(value);
         }
-        [Authorize]
         public ActionResult ProductList()
         {
             var value = db.Products.ToList();

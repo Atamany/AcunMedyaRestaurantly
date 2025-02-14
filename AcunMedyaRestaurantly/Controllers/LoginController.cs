@@ -9,6 +9,7 @@ using System.Web.Security;
 
 namespace AcunMedyaRestaurantly.Controllers
 {
+    [AllowAnonymous]
     public class LoginController : Controller
     {
         RestaurantlyContext db = new RestaurantlyContext();
@@ -31,7 +32,6 @@ namespace AcunMedyaRestaurantly.Controllers
             {
                 return View();
             }
-            return View();
         }
     }
 }
