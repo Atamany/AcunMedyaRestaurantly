@@ -145,6 +145,7 @@
     <Compile Include="Controllers\ReservationController.cs" />
     <Compile Include="Controllers\ServiceController.cs" />
     <Compile Include="Controllers\SpecialController.cs" />
+    <Compile Include="Controllers\TestimonialController.cs" />
     <Compile Include="Entities\About.cs" />
     <Compile Include="Entities\Admin.cs" />
     <Compile Include="Entities\Adress.cs" />
@@ -5872,6 +5873,9 @@
     <Content Include="Views\Special\SpecialList.cshtml" />
     <Content Include="Views\Special\SpecialCreate.cshtml" />
     <Content Include="Views\Special\SpecialEdit.cshtml" />
+    <Content Include="Views\Testimonial\TestimonialList.cshtml" />
+    <Content Include="Views\Testimonial\TestimonialCreate.cshtml" />
+    <Content Include="Views\Testimonial\TestimonialEdit.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
