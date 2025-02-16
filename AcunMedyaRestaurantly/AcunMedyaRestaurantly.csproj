@@ -142,6 +142,7 @@
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\LoginController.cs" />
     <Compile Include="Controllers\ProductController.cs" />
+    <Compile Include="Controllers\ReservationController.cs" />
     <Compile Include="Entities\About.cs" />
     <Compile Include="Entities\Admin.cs" />
     <Compile Include="Entities\Adress.cs" />
@@ -5860,6 +5861,9 @@
     <Content Include="Views\Feature\FeatureList.cshtml" />
     <Content Include="Views\Feature\FeatureCreate.cshtml" />
     <Content Include="Views\Feature\FeatureEdit.cshtml" />
+    <Content Include="Views\Reservation\ReservationList.cshtml" />
+    <Content Include="Views\Reservation\ReservationCreate.cshtml" />
+    <Content Include="Views\Reservation\ReservationEdit.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

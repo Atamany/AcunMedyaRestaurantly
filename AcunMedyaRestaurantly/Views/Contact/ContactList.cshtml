@@ -48,7 +48,14 @@
                                         <th>@item.Email</th>
                                         <th>@item.Subject</th>
                                         <th>@item.Message</th>
-                                        <th>@item.isRead</th>
+                                        @if (item.isRead == true)
+                                        {
+                                            <th><i class="fa fa-circle-o text-success  mr-2"></i> Okundu...</th>
+                                        }
+                                        @if (item.isRead == false)
+                                        {
+                                            <th><i class="fa fa-circle-o text-danger  mr-2"></i> Okunmadı...</th>
+                                        }
                                         <th>@item.SendDate</th>
                                     </tr>
                                 }
