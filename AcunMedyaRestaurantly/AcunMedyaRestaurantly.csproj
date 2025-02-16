@@ -144,6 +144,7 @@
     <Compile Include="Controllers\ProductController.cs" />
     <Compile Include="Controllers\ReservationController.cs" />
     <Compile Include="Controllers\ServiceController.cs" />
+    <Compile Include="Controllers\SpecialController.cs" />
     <Compile Include="Entities\About.cs" />
     <Compile Include="Entities\Admin.cs" />
     <Compile Include="Entities\Adress.cs" />
@@ -5868,6 +5869,9 @@
     <Content Include="Views\Service\ServiceList.cshtml" />
     <Content Include="Views\Service\ServiceCreate.cshtml" />
     <Content Include="Views\Service\ServiceEdit.cshtml" />
+    <Content Include="Views\Special\SpecialList.cshtml" />
+    <Content Include="Views\Special\SpecialCreate.cshtml" />
+    <Content Include="Views\Special\SpecialEdit.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

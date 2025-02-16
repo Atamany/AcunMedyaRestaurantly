@@ -1,0 +1,68 @@
+﻿@model List<AcunMedyaRestaurantly.Entities.Special>
+@{
+    ViewBag.Title = "SpecialList";
+    Layout = "~/Views/AdminLayout/Index.cshtml";
+    var count = 0;
+}
+
+<div class="row page-titles mx-0">
+    <div class="col p-md-0">
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="javascript:void(0)">Ana Sayfa</a></li>
+            <li class="breadcrumb-item active"><a href="javascript:void(0)">Spesiyaller</a></li>
+        </ol>
+    </div>
+</div>
+<!-- row -->
+
+<div class="container-fluid">
+    <div class="row">
+
+        <!-- /# column -->
+        <div class="col-lg-12">
+            <div class="card">
+                <div class="card-body">
+                    <div class="card-title">
+                        <h4>Spesiyaller</h4>
+                    </div>
+                    <div class="table-responsive">
+                        <table class="table table-bordered">
+                            <thead>
+                                <tr>
+                                    <th>#</th>
+                                    <th>Spesiyal</th>
+                                    <th>Özet</th>
+                                    <th>Açıklama</th>
+                                    <th>Resim</th>
+                                    <th>Sil</th>
+                                    <th>Güncelle</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                @foreach (var item in Model)
+                                {
+                                    count++;
+                                    <tr>
+                                        <th>@count</th>
+                                        <th>@item.Title</th>
+                                        <th>@item.ShortDescription</th>
+                                        <th>@item.FullDescription</th>
+                                        <td><img src="@item.ImageUrl" style="width:100px; height:100px" /></td>
+                                        <td><a href="/Special/SpecialDelete/@item.SpecialId" class="btn btn-danger"><i class="fa fa-close color-muted m-r-5"></i> Sil</a></td>
+                                        <td><a href="/Special/SpecialEdit/@item.SpecialId" class="btn btn-info gradient-1">Güncelle</a></td>
+                                    </tr>
+                                }
+                            </tbody>
+                        </table>
+                        <a href="/Special/SpecialCreate/" class="btn btn-success">Spesiyal Ekle</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- /# column -->
+
+    </div>
+</div>
+
+
+
