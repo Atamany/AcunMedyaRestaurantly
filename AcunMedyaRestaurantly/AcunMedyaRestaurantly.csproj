@@ -134,6 +134,7 @@
     <Compile Include="Controllers\AdressController.cs" />
     <Compile Include="Controllers\CategoryController.cs" />
     <Compile Include="Controllers\ChefController.cs" />
+    <Compile Include="Controllers\ContactController.cs" />
     <Compile Include="Controllers\DashboardController.cs" />
     <Compile Include="Controllers\DefaultController.cs" />
     <Compile Include="Controllers\ErrorPageController.cs" />
@@ -5854,6 +5855,7 @@
     <Content Include="Views\Chef\ChefList.cshtml" />
     <Content Include="Views\Chef\ChefCreate.cshtml" />
     <Content Include="Views\Chef\ChefEdit.cshtml" />
+    <Content Include="Views\Contact\ContactList.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
