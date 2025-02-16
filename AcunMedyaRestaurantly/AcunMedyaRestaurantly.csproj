@@ -133,6 +133,7 @@
     <Compile Include="Controllers\AdminLayoutController.cs" />
     <Compile Include="Controllers\AdressController.cs" />
     <Compile Include="Controllers\CategoryController.cs" />
+    <Compile Include="Controllers\ChefController.cs" />
     <Compile Include="Controllers\DashboardController.cs" />
     <Compile Include="Controllers\DefaultController.cs" />
     <Compile Include="Controllers\ErrorPageController.cs" />
@@ -5850,6 +5851,9 @@
     <Content Include="Views\Adress\AdressList.cshtml" />
     <Content Include="Views\Adress\AdressCreate.cshtml" />
     <Content Include="Views\Adress\AdressEdit.cshtml" />
+    <Content Include="Views\Chef\ChefList.cshtml" />
+    <Content Include="Views\Chef\ChefCreate.cshtml" />
+    <Content Include="Views\Chef\ChefEdit.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
