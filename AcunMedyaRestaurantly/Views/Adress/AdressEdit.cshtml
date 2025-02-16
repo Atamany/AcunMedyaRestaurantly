@@ -1,0 +1,41 @@
+﻿@model AcunMedyaRestaurantly.Entities.Adress
+@{
+    ViewBag.Title = "AdressEdit";
+    Layout = "~/Views/AdminLayout/Index.cshtml";
+}
+
+<div class="row page-titles mx-0">
+    <div class="col p-md-0">
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="javascript:void(0)">Anasayfa</a></li>
+            <li class="breadcrumb-item active"><a href="javascript:void(0)">Adres Güncelleme</a></li>
+        </ol>
+    </div>
+</div>
+<div class="container-fluid">
+    <div class="col-lg-12">
+        <div class="card">
+            <div class="card-body">
+                <h4 class="card-title">Adres Güncelleme Formu</h4>
+                <div class="basic-form">
+                    <form method="post">
+
+                        <div class="form-group">
+                            @Html.HiddenFor(x => x.AdressId)
+                            <label>Adres</label>
+                            @Html.TextBoxFor(x => x.Location, new { @class = "form-control" })
+                            <label>Çalışma Saatleri</label>
+                            @Html.TextBoxFor(x => x.OpenHours, new { @class = "form-control" })
+                            <label>E-Posta</label>
+                            @Html.TextBoxFor(x => x.Email, new { @class = "form-control" })
+                            <label>Telefon</label>
+                            @Html.TextBoxFor(x => x.Call, new { @class = "form-control" })
+                        </div>
+
+                        <button type="submit" class="btn btn-dark gradient-2">Güncelle</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
