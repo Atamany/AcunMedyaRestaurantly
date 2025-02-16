@@ -1,0 +1,65 @@
+﻿@model List<AcunMedyaRestaurantly.Entities.Admin>
+
+@{
+    ViewBag.Title = "AdminList";
+    Layout = "~/Views/AdminLayout/Index.cshtml";
+    var count = 0;
+}
+
+<div class="row page-titles mx-0">
+    <div class="col p-md-0">
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="javascript:void(0)">Ana Sayfa</a></li>
+            <li class="breadcrumb-item active"><a href="javascript:void(0)">Adminler</a></li>
+        </ol>
+    </div>
+</div>
+<!-- row -->
+
+<div class="container-fluid">
+    <div class="row">
+
+        <!-- /# column -->
+        <div class="col-lg-12">
+            <div class="card">
+                <div class="card-body">
+                    <div class="card-title">
+                        <h4>Table Bordered</h4>
+                    </div>
+                    <div class="table-responsive">
+                        <table class="table table-bordered">
+                            <thead>
+                                <tr>
+                                    <th>#</th>
+                                    <th>Kullanıcı Adı</th>
+                                    <th>Şifre</th>
+                                    <th>Sil</th>
+                                    <th>Güncelle</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                @foreach (var item in Model)
+                                {
+                                    count++;
+                                    <tr>
+                                        <th>@count</th>
+                                        <th>@item.Username</th>
+                                        <th>@item.Password</th>
+                                        <td><a href="/Admin/AdminDelete/@item.AdminId" class="btn btn-danger"><i class="fa fa-close color-muted m-r-5"></i> Sil</a></td>
+                                        <td><a href="/Admin/AdminEdit/@item.AdminId" class="btn btn-info gradient-1">Güncelle</a></td>
+                                    </tr>
+                                }
+                            </tbody>
+                        </table>
+                        <a href="/Admin/AdminCreate/" class="btn btn-success">Admin Ekle</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- /# column -->
+
+    </div>
+</div>
+
+
+

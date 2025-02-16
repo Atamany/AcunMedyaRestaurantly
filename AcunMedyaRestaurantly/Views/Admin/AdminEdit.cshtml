@@ -1,0 +1,42 @@
+﻿@model AcunMedyaRestaurantly.Entities.Admin
+
+@{
+    ViewBag.Title = "AdminEdit";
+    Layout = "~/Views/AdminLayout/Index.cshtml";
+}
+
+<div class="row page-titles mx-0">
+    <div class="col p-md-0">
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="javascript:void(0)">Anasayfa</a></li>
+            <li class="breadcrumb-item active"><a href="javascript:void(0)">Admin Güncelleme</a></li>
+        </ol>
+    </div>
+</div>
+<div class="container-fluid">
+    <div class="col-lg-12">
+        <div class="card">
+            <div class="card-body">
+                <h4 class="card-title">Admin Güncelleme Formu</h4>
+                <div class="basic-form">
+                    <form method="post">
+
+                        <div class="form-group">
+                            @Html.HiddenFor(x => x.AdminId)
+                            <label>Kullanıcı Adı</label>
+                            @Html.TextBoxFor(x => x.Username, new { @class = "form-control" })
+                            <label>Şifre</label>
+                            @Html.TextBoxFor(x => x.Password, new { @class = "form-control" })
+                        </div>
+
+                        <button type="submit" class="btn btn-dark gradient-2">Güncelle</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
