@@ -20,9 +20,12 @@ namespace AcunMedyaRestaurantly.Controllers
         }
         public PartialViewResult PartialNavbar()
         {
+            var mesajlar = db.Contacts.ToList();
             var values = db.Notifications.Where(x => x.isRead == false).ToList();
             var notificationIsReadyByFalseCount = values.Count();
             ViewBag.notificationIsReadyByFalseCount = notificationIsReadyByFalseCount;
+            ViewBag.mesajlar = mesajlar;
+            ViewBag.okunmamisMesajSayisi = db.Contacts.Where(x=>x.isRead==false).Count();
             return PartialView(values);
         }
         public PartialViewResult PartialSidebar()
