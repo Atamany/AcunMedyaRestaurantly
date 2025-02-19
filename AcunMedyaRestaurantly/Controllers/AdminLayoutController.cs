@@ -21,6 +21,8 @@ namespace AcunMedyaRestaurantly.Controllers
         public PartialViewResult PartialNavbar()
         {
             var values = db.Notifications.Where(x => x.isRead == false).ToList();
+            var notificationIsReadyByFalseCount = values.Count();
+            ViewBag.notificationIsReadyByFalseCount = notificationIsReadyByFalseCount;
             return PartialView(values);
         }
         public PartialViewResult PartialSidebar()
