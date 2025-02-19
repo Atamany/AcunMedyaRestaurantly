@@ -40,5 +40,19 @@ namespace AcunMedyaRestaurantly.Controllers
         {
             return PartialView();
         }
+        public ActionResult NotificationStatusChangeToTrue(int id)
+        {
+            var notification = db.Notifications.Find(id);
+            notification.isRead = true;
+            db.SaveChanges();
+            return RedirectToAction("Index", "Dashboard");
+        }
+        public ActionResult MessageStatusChangeToTrue(int id)
+        {
+            var message = db.Contacts.Find(id);
+            message.isRead = true;
+            db.SaveChanges();
+            return RedirectToAction("Index","Dashboard");
+        }
     }
 }

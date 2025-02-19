@@ -37,7 +37,7 @@
                                     if (item.isRead == false)
                                     {
                                         <li class="notification-unread">
-                                            <a href="javascript:void()">
+                                            <a href="/AdminLayout/MessageStatusChangeToTrue/@item.ContactId">
                                                 <img class="float-left mr-3 avatar-img" src="https://kodgunlugum.com/wp-content/uploads/2018/09/whatsapp-okunmadi.png" alt="">
                                                 <div class="notification-content">
                                                     <div class="notification-heading">@item.Name</div>
@@ -50,7 +50,7 @@
                                     if (item.isRead = true)
                                     {
                                         <li>
-                                            <a href="javascript:void()">
+                                            <a href="/AdminLayout/MessageStatusChangeToTrue/@item.ContactId">
                                                 <img class="float-left mr-3 avatar-img" src="https://kodgunlugum.com/wp-content/uploads/2018/09/whatsapp-okundu.png" alt="">
                                                 <div class="notification-content">
                                                     <div class="notification-heading">@item.Name</div>
@@ -80,7 +80,7 @@
                                 @foreach (var item in Model)
                                 {
                                     <li>
-                                        <a href="javascript:void()">
+                                        <a href="/AdminLayout/NotificationStatusChangeToTrue/@item.NotificationId">
                                             <span class="mr-3 avatar-icon bg-success-lighten-2" style="background-color:@item.IconColor"><i class="@item.Icon"></i></span>
                                             <div class="notification-content">
                                                 <h6 class="notification-heading">@item.Title</h6>
