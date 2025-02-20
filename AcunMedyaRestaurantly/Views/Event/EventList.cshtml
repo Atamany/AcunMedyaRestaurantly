@@ -1,0 +1,77 @@
+﻿@model List<AcunMedyaRestaurantly.Entities.Event>
+
+@{
+    ViewBag.Title = "EventList";
+    Layout = "~/Views/AdminLayout/Index.cshtml";
+    var count = 0;
+}
+
+<div class="row page-titles mx-0">
+    <div class="col p-md-0">
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="javascript:void(0)">Ana Sayfa</a></li>
+            <li class="breadcrumb-item active"><a href="javascript:void(0)">Etkinlikler</a></li>
+        </ol>
+    </div>
+</div>
+<!-- row -->
+
+<div class="container-fluid">
+    <div class="row">
+
+        <!-- /# column -->
+        <div class="col-lg-12">
+            <div class="card">
+                <div class="card-body">
+                    <div class="card-title">
+                        <h4>Etkinlikler</h4>
+                    </div>
+                    <div class="table-responsive">
+                        <table class="table table-bordered">
+                            <thead>
+                                <tr>
+                                    <th>#</th>
+                                    <th>Başlık</th>
+                                    <th>Fiyat</th>
+                                    <th>Açıklama 1</th>
+                                    <th>Açıklama 2</th>
+                                    <th>Açıklama 3</th>
+                                    <th>Açıklama 4</th>
+                                    <th>Açıklama 5</th>
+                                    <th>Resim</th>
+                                    <th>Sil</th>
+                                    <th>Güncelle</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                @foreach (var item in Model)
+                                {
+                                    count++;
+                                    <tr>
+                                        <th>@count</th>
+                                        <td>@item.Title</td>
+                                        <td>@item.Price</td>
+                                        <td>@item.Message1</td>
+                                        <td>@item.Message2</td>
+                                        <td>@item.Message3</td>
+                                        <td>@item.Message4</td>
+                                        <td>@item.Message5</td>
+                                        <td><img src="@item.ImageUrl" style="width:250px; height:250px" /></td>
+                                        <td><a href="/Event/EventDelete/@item.EventId" class="btn btn-danger gradient-2">Sil</a></td>
+                                        <td><a href="/Event/EventEdit/@item.EventId" class="btn btn-info gradient-1">Güncelle</a></td>
+                                    </tr>
+                                }
+                            </tbody>
+                        </table>
+                        <a href="/Event/EventCreate/" class="btn btn-success">Etkinlik Ekle</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- /# column -->
+
+    </div>
+</div>
+
+
+
