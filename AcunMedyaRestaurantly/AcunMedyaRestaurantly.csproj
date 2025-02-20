@@ -129,7 +129,6 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Context\RestaurantlyContext.cs" />
     <Compile Include="Controllers\AboutController.cs" />
-    <Compile Include="Controllers\AdminController.cs" />
     <Compile Include="Controllers\AdminLayoutController.cs" />
     <Compile Include="Controllers\AdressController.cs" />
     <Compile Include="Controllers\CategoryController.cs" />
@@ -143,6 +142,7 @@
     <Compile Include="Controllers\GalleryController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\LoginController.cs" />
+    <Compile Include="Controllers\NotificationController.cs" />
     <Compile Include="Controllers\ProductController.cs" />
     <Compile Include="Controllers\ProfilesController.cs" />
     <Compile Include="Controllers\ReservationController.cs" />
@@ -5881,9 +5881,6 @@
     <Content Include="Views\About\AboutList.cshtml" />
     <Content Include="Views\About\AboutCreate.cshtml" />
     <Content Include="Views\About\AboutEdit.cshtml" />
-    <Content Include="Views\Admin\AdminList.cshtml" />
-    <Content Include="Views\Admin\AdminCreate.cshtml" />
-    <Content Include="Views\Admin\AdminEdit.cshtml" />
     <Content Include="Views\Adress\AdressList.cshtml" />
     <Content Include="Views\Adress\AdressCreate.cshtml" />
     <Content Include="Views\Adress\AdressEdit.cshtml" />
@@ -5916,6 +5913,7 @@
     <Content Include="Views\Gallery\GalleryList.cshtml" />
     <Content Include="Views\Gallery\GalleryCreate.cshtml" />
     <Content Include="Views\Gallery\GalleryEdit.cshtml" />
+    <Content Include="Views\Notification\NotificationList.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
