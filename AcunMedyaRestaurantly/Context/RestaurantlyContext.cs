@@ -23,5 +23,6 @@ namespace AcunMedyaRestaurantly.Context
         public DbSet<Admin> Admins { get; set; }
         public DbSet<Notification> Notifications { get; set; }
         public DbSet<Event> Events { get; set; }
+        public DbSet<Gallery> Galleries { get; set; }
     }
 }

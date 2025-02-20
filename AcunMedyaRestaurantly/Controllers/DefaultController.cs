@@ -103,6 +103,16 @@ namespace AcunMedyaRestaurantly.Controllers
             var value = db.Events.ToList();
             return PartialView(value);
         }
+        public PartialViewResult PartialFooter()
+        {
+            var value = db.Adresses.ToList();
+            return PartialView(value);
+        }
+        public PartialViewResult PartialGallery()
+        {
+            var value = db.Galleries.ToList();
+            return PartialView(value);
+        }
         public PartialViewResult PartialAdress()
         {
             ViewBag.Location = db.Adresses.Select(x => x.Location).FirstOrDefault();
