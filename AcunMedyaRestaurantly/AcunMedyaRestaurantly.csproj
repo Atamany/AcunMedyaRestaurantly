@@ -148,6 +148,7 @@
     <Compile Include="Controllers\ReservationController.cs" />
     <Compile Include="Controllers\ServiceController.cs" />
     <Compile Include="Controllers\SpecialController.cs" />
+    <Compile Include="Controllers\StatisticController.cs" />
     <Compile Include="Controllers\TestimonialController.cs" />
     <Compile Include="Entities\About.cs" />
     <Compile Include="Entities\Admin.cs" />
@@ -5914,6 +5915,7 @@
     <Content Include="Views\Gallery\GalleryCreate.cshtml" />
     <Content Include="Views\Gallery\GalleryEdit.cshtml" />
     <Content Include="Views\Notification\NotificationList.cshtml" />
+    <Content Include="Views\Statistic\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
