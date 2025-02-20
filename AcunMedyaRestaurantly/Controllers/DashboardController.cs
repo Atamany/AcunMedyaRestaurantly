@@ -17,6 +17,10 @@ namespace AcunMedyaRestaurantly.Controllers
             ViewBag.CategoryCount = db.Categories.Count();
             ViewBag.ChefCount = db.Chefs.Count();
             ViewBag.SpecialCount = db.Specials.Count();
+            ViewBag.MessageCount = db.Contacts.Count();
+            ViewBag.NotificationCount = db.Notifications.Count();
+            ViewBag.ReservationCount = db.Reservations.Count();
+            ViewBag.TestimonialCount = db.Testimonials.Count();
             return View();
         }
         public PartialViewResult ReservationPartial()

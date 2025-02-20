@@ -22,7 +22,7 @@ namespace AcunMedyaRestaurantly.Controllers
         public ActionResult Index(Admin p)
         {
             var values = db.Admins.FirstOrDefault(x => x.Username == p.Username && x.Password == p.Password);
-            if(values != null)
+            if (values != null)
             {
                 FormsAuthentication.SetAuthCookie(values.Username, false);
                 Session["Username"] = values.Username.ToString();
@@ -39,5 +39,13 @@ namespace AcunMedyaRestaurantly.Controllers
                 return View();
             }
         }
+        public ActionResult Logout()
+        {
+            Session.Clear();
+            Session.Abandon();
+
+            return RedirectToAction("Index", "Login");
+        }
+
     }
 }

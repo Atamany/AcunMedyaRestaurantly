@@ -56,57 +56,56 @@
         </div>
     </div>
 
-    <!--<div class="row">
+    <div class="row">
         <div class="col-lg-3 col-sm-6">
-            <div class="card">
+            <div class="card gradient-5">
                 <div class="card-body">
-                    <div class="text-center">
-                        <img src="./images/users/8.jpg" class="rounded-circle" alt="">
-                        <h5 class="mt-3 mb-1">Ana Liem</h5>
-                        <p class="m-0">Senior Manager</p>-->
-    <!-- <a href="javascript:void()" class="btn btn-sm btn-warning">Send Message</a> -->
-    <!--</div>
-            </div>
-        </div>
-    </div>
-    <div class="col-lg-3 col-sm-6">
-        <div class="card">
-            <div class="card-body">
-                <div class="text-center">
-                    <img src="./images/users/5.jpg" class="rounded-circle" alt="">
-                    <h5 class="mt-3 mb-1">John Abraham</h5>
-                    <p class="m-0">Store Manager</p>-->
-    <!-- <a href="javascript:void()" class="btn btn-sm btn-warning">Send Message</a> -->
-    <!--</div>
-            </div>
-        </div>
-    </div>
-    <div class="col-lg-3 col-sm-6">
-        <div class="card">
-            <div class="card-body">
-                <div class="text-center">
-                    <img src="./images/users/7.jpg" class="rounded-circle" alt="">
-                    <h5 class="mt-3 mb-1">John Doe</h5>
-                    <p class="m-0">Sales Man</p>-->
-    <!-- <a href="javascript:void()" class="btn btn-sm btn-warning">Send Message</a> -->
-    <!--</div>
-            </div>
-        </div>
-    </div>
-    <div class="col-lg-3 col-sm-6">
-        <div class="card">
-            <div class="card-body">
-                <div class="text-center">
-                    <img src="./images/users/1.jpg" class="rounded-circle" alt="">
-                    <h5 class="mt-3 mb-1">Mehedi Titas</h5>
-                    <p class="m-0">Online Marketer</p>-->
-    <!-- <a href="javascript:void()" class="btn btn-sm btn-warning">Send Message</a> -->
-    <!--</div>
+                    <h3 class="card-title text-white">Gelen Mesajlar</h3>
+                    <div class="d-inline-block">
+                        <h2 class="text-white">@ViewBag.MessageCount</h2>
+                        <p class="text-white mb-0">Mesajlar</p>
+                    </div>
+                    <span class="float-right display-5 opacity-5"><i class="fa fa-shopping-cart"></i></span>
                 </div>
             </div>
         </div>
-
-    </div>-->
+        <div class="col-lg-3 col-sm-6">
+            <div class="card gradient-6">
+                <div class="card-body">
+                    <h3 class="card-title text-white">Bildirim Sayısı</h3>
+                    <div class="d-inline-block">
+                        <h2 class="text-white">@ViewBag.NotificationCount</h2>
+                        <p class="text-white mb-0">Bildirimler</p>
+                    </div>
+                    <span class="float-right display-5 opacity-5"><i class="fa fa-money"></i></span>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-3 col-sm-6">
+            <div class="card gradient-7">
+                <div class="card-body">
+                    <h3 class="card-title text-white">Rezervasyon Sayısı</h3>
+                    <div class="d-inline-block">
+                        <h2 class="text-white">@ViewBag.ReservationCount</h2>
+                        <p class="text-white mb-0">Rezervasyonlar</p>
+                    </div>
+                    <span class="float-right display-5 opacity-5"><i class="fa fa-users"></i></span>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-3 col-sm-6">
+            <div class="card gradient-8">
+                <div class="card-body">
+                    <h3 class="card-title text-white">Referans Sayısı</h3>
+                    <div class="d-inline-block">
+                        <h2 class="text-white">@ViewBag.TestimonialCount</h2>
+                        <p class="text-white mb-0">Referanslar</p>
+                    </div>
+                    <span class="float-right display-5 opacity-5"><i class="fa fa-heart"></i></span>
+                </div>
+            </div>
+        </div>
+    </div>
 
     @Html.Action("ReservationPartial", "Dashboard")
 </div>
