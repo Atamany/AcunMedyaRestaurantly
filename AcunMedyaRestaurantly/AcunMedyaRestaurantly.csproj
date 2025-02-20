@@ -153,6 +153,7 @@
     <Compile Include="Entities\Category.cs" />
     <Compile Include="Entities\Chef.cs" />
     <Compile Include="Entities\Contact.cs" />
+    <Compile Include="Entities\Event.cs" />
     <Compile Include="Entities\Feature.cs" />
     <Compile Include="Entities\Notification.cs" />
     <Compile Include="Entities\Product.cs" />
@@ -194,6 +195,18 @@
     <Compile Include="Migrations\202502191814387_mig32.cs" />
     <Compile Include="Migrations\202502191814387_mig32.Designer.cs">
       <DependentUpon>202502191814387_mig32.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202502200956596_mig5.cs" />
+    <Compile Include="Migrations\202502200956596_mig5.Designer.cs">
+      <DependentUpon>202502200956596_mig5.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202502200958531_mig6.cs" />
+    <Compile Include="Migrations\202502200958531_mig6.Designer.cs">
+      <DependentUpon>202502200958531_mig6.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202502201017463_mig7.cs" />
+    <Compile Include="Migrations\202502201017463_mig7.Designer.cs">
+      <DependentUpon>202502201017463_mig7.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -5887,6 +5900,7 @@
     <Content Include="Views\Testimonial\TestimonialCreate.cshtml" />
     <Content Include="Views\Testimonial\TestimonialEdit.cshtml" />
     <Content Include="Views\Profiles\Index.cshtml" />
+    <Content Include="Views\Default\PartialEvent.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -5943,6 +5957,15 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202502191814387_mig32.resx">
       <DependentUpon>202502191814387_mig32.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202502200956596_mig5.resx">
+      <DependentUpon>202502200956596_mig5.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202502200958531_mig6.resx">
+      <DependentUpon>202502200958531_mig6.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202502201017463_mig7.resx">
+      <DependentUpon>202502201017463_mig7.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
