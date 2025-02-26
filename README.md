@@ -25,7 +25,7 @@
 <img src="https://github.com/user-attachments/assets/540e3f3d-2ca6-4b6e-9d80-c71efadd272e" title="Veri Tabanı" alt="Veri Tabanı">
 
 <h3>Ana Sayfa</h3>
-<img src="https://github.com/user-attachments/assets/8a876efb-aa6d-4233-9f7a-234e83af7a01" title="Ana Sayfa" alt="Ana Sayfa">
+<img src="https://github.com/user-attachments/assets/5e03b8f5-bd8a-47f1-9280-d902f984ee1d" title="Ana Sayfa" alt="Ana Sayfa">
 
 <h3>Login</h3>
 <img src="https://github.com/user-attachments/assets/1919adb5-dca1-4541-b69e-ad450860d511" title="Login" alt="Login">
