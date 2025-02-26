@@ -18,22 +18,30 @@
             <div class="card-body">
                 <h4 class="card-title">Profil Güncelleme Formu</h4>
                 <div class="basic-form">
-                    <form method="post">
+                    <form method="post" enctype="multipart/form-data">
 
                         <div class="form-group">
-                            @Html.HiddenFor(x => x.AdminId)
+                            <input type="hidden" name="AdminId" value="@Model.AdminId" />
                             <label>Ad</label>
-                            @Html.TextBoxFor(x => x.Name, new { @class = "form-control" })
+                            <input type="text" name="Name" value="@Model.Name" class="form-control" />
                             <label>Soyad</label>
-                            @Html.TextBoxFor(x => x.Surname, new { @class = "form-control" })
+                            <input type="text" name="Surname" value="@Model.Surname" class="form-control" />
                             <label>E-Posta</label>
-                            @Html.TextBoxFor(x => x.Email, new { @class = "form-control" })
+                            <input type="text" name="Email" value="@Model.Email" class="form-control" />
                             <label>Kulanıcı Adı</label>
-                            @Html.TextBoxFor(x => x.Username,  new { @class = "form-control" })
+                            <input type="text" name="Username" value="@Model.Username" class="form-control" />
                             <label>Şifre</label>
-                            @Html.TextBoxFor(x => x.Password, new { @class = "form-control" })
+                            <input type="password" name="Password" value="@Model.Password" class="form-control" />
+                            @Html.ValidationSummary()
                             <label>Resim</label>
-                            @Html.TextBoxFor(x => x.ImageUrl, new { @class = "form-control" })
+                            @if (!string.IsNullOrEmpty(Model.ImageUrl))
+            {
+                <div class="mt-2">
+                    <img src="@Model.ImageUrl" style="width:100px; height:100px;" class="img-thumbnail" />
+                </div>
+            }
+                            <input type="text" name="ImageUrl" value="@Model.ImageUrl" class="form-control" />
+                            <input type="file" name="ImageFile" value="@Model.ImageFile" class="form-control" />
                         </div>
 
                         <button type="submit" class="btn btn-dark gradient-2">Güncelle</button>
