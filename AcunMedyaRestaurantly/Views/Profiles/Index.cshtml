@@ -31,7 +31,7 @@
                             <label>Kulanıcı Adı</label>
                             <input type="text" name="Username" value="@Model.Username" class="form-control" />
                             <label>Şifre</label>
-                            <input type="password" name="Password" value="@Model.Password" class="form-control" />
+                            <input type="text" name="Password" value="@Model.Password" class="form-control" />
                             @Html.ValidationSummary()
                             <label>Resim</label>
                             @if (!string.IsNullOrEmpty(Model.ImageUrl))
