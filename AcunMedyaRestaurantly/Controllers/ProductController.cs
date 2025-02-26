@@ -17,8 +17,15 @@ namespace AcunMedyaRestaurantly.Controllers
             var value = db.Products.ToList();
             return View(value);
         }
-        public ActionResult ProductList()
+        public ActionResult ProductList(string searchText)
         {
+            List<Product> values;
+            if(searchText != null)
+            {
+                values = db.Products.Where(x => x.Name.Contains(searchText)).ToList();
+
+                return View(values);
+            }
             var value = db.Products.ToList();
             return View(value);
         }
