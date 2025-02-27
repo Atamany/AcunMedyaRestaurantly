@@ -1,4 +1,5 @@
 <h1> 🚀 Restorant Tanıtım Sayfası</h1>
+<a href="http://restaurantly.somee.com/Default/Index/">Denemek için: http://restaurantly.somee.com/Default/Index/ </a>
 <h3>Acun Medya Akademi'de Murat Yücedağ koordinatörlüğünde Busenur Demirbaş tarafından verilen "C# ile Programlamaya Giriş" eğitimi kapsamında tamamladığım 2. proje.</h3>
 <h3>.Net MVC ile hazırlanmış, orta seviye Restorant tanıtım sayfası.</h3>
 <h2>Projeye Genel Bakış</h2>
